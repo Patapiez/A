@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<header>
+	<nav class="navega">
+			<ul class="menudo">
+				<li><a href="#" class="uno">Unidad I</a></li>
+				<li><a href="#" class="dos">Unidad II</a></li>
+                <li><a href="#" class="tres">Unidad III</a>
+                <ul class="submenudo">
+                	<li><a href="#">1</a></li>
+                	<li><a href="#">2</a></li>
+                	<li><a href="#">3</a></li>
+                	<li><a href="#">4</a></li>
+                	<li><a href="#">5</a></li>
+                </ul>
+            </li>
+				<li><a href="#" class="cuatro">Unidad IV</a></li>
+				<li><a href="#" class="cinco">Unidad V</a>
+				<ul class="submenudo">
+                	<li><a href="#">romero1</a></li>
+                	<li><a href="#">romero2</a></li>
+                	<li><a href="#">romero3</a></li>
+                	<li><a href="#">romero4</a></li>
+                	<li><a href="#">romero5</a></li>
+                </ul>
+			</li>	
+			</ul>
+
+			</nav>
+</header>
+<style>
+
+body{
+	background:#313052;
+
+}
+	/* Menu*/
+
+.navega{
+	
+	width: 1000px;
+	margin:30px auto;
+	background:#fff;
+}
+.navega ul{
+    list-style:none;
+}
+.menudo > li {
+	position: relative;
+	display: inline-block;
+}
+.menudo > li a{
+display:block;
+padding:15px 20px;
+color:353535;
+text-decoration:none;
+}
+.menu li a:hover{
+	color:#CE7D35;
+	transition: all 0.3s;
+}
+/* submenu */
+.submenudo{
+	position: absolute;
+	background:#333333;
+	width:5%;
+	visibility:hidden;
+	opacity:0;
+	transition: opacity .5s;
+}
+.submenudo li a{
+display: block;
+padding: 15px;
+color:#fff;
+text-decoration: none;
+}
+.menudo li:hover .submenudo{
+	visibility:visible;
+	opacity:1;
+}
+}
+</style>
+<body>
+	
+</body>
+</html>

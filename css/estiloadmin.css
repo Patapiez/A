@@ -1,0 +1,336 @@
+
+header h1{color:red;}
+
+header h1{
+	
+	font-family: 'Revalia', cursive;
+    text-align: center;
+}
+nav ul li {
+	
+	font-family: 'Baloo Chettan', cursive;
+  
+    height: 125px;
+    margin:0px;
+  /*  border: 1px solid red; */
+
+}  
+
+
+
+
+nav ul {               
+	            
+list-style: none;
+padding: 0;
+
+              
+
+}
+
+nav a {
+
+    text-decoration:none;
+    padding:0;
+    
+}
+
+
+
+nav ul li {
+
+    float:left;
+
+
+}
+
+
+nav  ul {
+
+display: table;
+width: 72%;
+
+
+}
+
+/* color de fondo del menu con subindice */
+
+nav a:hover{
+    
+    background-color: rgb(139,139,139);
+    
+}
+
+
+
+/* estilo del menu principal */
+
+nav ul ul  {
+
+display:none; 
+
+}
+
+
+
+
+           
+
+   /* ubicacion de la imagen principal */            
+
+
+
+header figure{
+	    
+	float: left;
+    margin-left: 100px;
+
+}
+
+
+
+
+
+/* color del texto de las unidades encabezado */
+
+html {background-color:            rgb(7,146,146);}
+header{background-color:            rgb(4,172,43);}
+header nav ul li a.verde {color:   rgb(33,145,14);}
+header nav ul li a.azul {color:  rgb(125,178,252);}
+header nav ul li a.rojo {color:               red;}
+header nav ul li a.diamante {color:rgb(7,146,146);}
+header nav ul li a.pasto {color: rgb(125,252,187);}
+header nav ul li a.blanco {color:rgb(254,255,255);}
+header nav ul li a.rosita {color:rgb(240,145,138);}
+header nav ul li a.rosita {color:rgb(240,145,138);}
+header nav ul li a.roma {color:     rgb(147,5,17);}
+
+video {
+
+    max-width:100%;
+    width:68%;
+    float:center;
+
+}
+
+
+
+
+/* estilos de las imagenes de las unidades */
+
+article img {
+
+	width:250px; 
+	height:250px;
+
+             }
+
+article{
+
+     display: inline-block;
+     margin: 50px 20px 20px 5px;
+             
+             }
+
+ article.a1{
+
+ 	border-width: 2px;
+ 	border-style: solid;
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	position: relative;
+    text-align: center;
+    font-family: 'Revalia', cursive;
+    font-size: 9px;
+    color: blue;
+    background-color: black;
+}
+
+article.a1 h2{
+
+color:pink;
+
+}
+
+article.a2{
+
+ 	border-width: 2px;
+ 	border-style: solid;
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	position: relative;
+    text-align: center;
+    font-family: 'Revalia', cursive;
+    font-size: 9px;
+    color:rgb(255,230,0);
+    background-color: black;
+}
+
+article.a2 h2{
+
+color:pink;
+
+}
+
+article.a3{
+
+ 	border-width: 2px;
+ 	border-style: solid;
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	position: relative;
+    text-align: center;
+    font-family: 'Revalia', cursive;
+    font-size: 9px;
+    color:rgb(255,230,0);
+    background-color: black;
+}
+
+article.a3 h2{
+
+color:pink;
+
+}
+
+article.a4{
+
+ 	border-width: 2px;
+ 	border-style: solid;
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	position: relative;
+    text-align: center;
+    font-family: 'Revalia', cursive;
+    font-size: 9px;
+    color:rgb(255,230,0);
+    background-color: black;
+}
+
+article.a4 h2{
+
+color:pink;
+
+}
+
+article.a5{
+
+ 	border-width: 2px;
+ 	border-style: solid;
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	position: relative;
+    text-align: center;
+    font-family: 'Revalia', cursive;
+    font-size: 9px;
+    color:rgb(255,230,0);
+    background-color: black;
+}
+
+article.a5 h2{
+
+color:pink;
+
+}
+
+article.a6{
+
+ 	border-width: 2px;
+ 	border-style: solid;
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	position: relative;
+    text-align: center;
+    font-family: 'Revalia', cursive;
+    font-size: 9px;
+    color:rgb(255,230,0);
+    background-color: black;
+}
+
+article.a6 h2{
+
+color:pink;
+
+}
+
+article.a7{
+
+ 	border-width: 2px;
+ 	border-style: solid;
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	position: relative;
+    text-align: center;
+    font-family: 'Revalia', cursive;
+    font-size: 9px;
+    color:rgb(255,230,0);
+    background-color: black;
+}
+
+article.a7 h2{
+
+color:pink;
+
+}
+
+article.a8{
+
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    font-family: 'Revalia', cursive;
+    font-size: 9px;
+    color:rgb(255,230,0);
+    background-color: black;
+}
+
+article.a8 h2{
+
+color:pink;
+
+}
+ 
+
+
+
+@media screen and (min-width: 480px){
+
+	header nav ul li{
+
+		width: 22%;
+
+	}
+
+}
+
+@media screen and (min-width: 767px){
+	header nav ul li{
+
+		width: 12%;
+
+	}
+
+	
+}
+@media screen and (min-width: 958px){
+
+	header nav ul li{
+
+		
+
+	}
+
+
+	
+}
+
+
+
+
+
+
+
+
+

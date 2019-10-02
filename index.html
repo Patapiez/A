@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Programacion Web</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<LINK href="css/estilomenu.css" rel="stylesheet" type="text/css">
+</head>
+<header> 
+	        <div class="logo">
+				<img src="" width="150" alt="">
+				<marquee behavior="alternate" SCROLLDELAY=100><a> Programacion WEB </a></marquee>
+			</div>
+             <nav class="navega">
+			<ul class="menudo">
+				<li><a href="#" class="uno">Unidad I</a>
+				<ul class="submenudo1">
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 1</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 2</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 3</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 4</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 5</a></li>
+				</ul>
+				</li>
+                <li><a href="#" class="dos">Unidad II</a>
+                <ul class="submenudo2">
+				<li><a href="UNIDAD II/2.1.html" target="iframe_uno">2.1</a></li>
+				<li><a href="UNIDAD II/2.2.html" target="iframe_uno">2.2</a></li>
+				<li><a href="UNIDAD II/2.3.html" target="iframe_uno">2.3</a></li>
+				<li><a href="UNIDAD II/2.4.html" target="iframe_uno">2.4</a></li>
+				<li><a href="UNIDAD II/2.5.html" target="iframe_uno">2.5</a></li>
+				<li><a href="UNIDAD II/2.6.html" target="iframe_uno">2.6</a></li>
+				<li><a href="UNIDAD II/2.7.html" target="iframe_uno">2.7</a></li>
+				</ul>
+				</li>
+				<li><a href="#" class="tres">Unidad III</a>
+				<ul class="submenudo3">
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 1</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 2</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 3</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 4</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 5</a></li>
+				</ul>
+				</li>
+				<li><a href="#" class="cuatro">Unidad IV</a>
+				<ul class="submenudo4">
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 1</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 2</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 3</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 4</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 5</a></li>
+				</ul>
+				</li>
+				<li><a href="#" class="cinco">Unidad V</a>
+				<ul class="submenudo5">
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 1</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 2</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 3</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 4</a></li>
+				<li><a href="enconstruccion.html" target="iframe_uno">Practica 5</a></li>
+				</ul>
+				</li>
+			</ul>
+		    </nav>
+		</header>
+<style>
+</style>
+<body>
+	 <article>
+		<div class="contenedor">
+		<section class="main">
+			<article>
+				<div class="del">
+					<div class="video1">
+				  <iframe id="iframe_uno" name="iframe_uno" frameborder="0"></iframe>
+		</div>
+	</div>
+     </article>
+   </section>
+		<footer>
+			<section class="links">
+				<a class="l1" href="https://www.facebook.com/patapie.delacruz.1" target="iframe_uno"><img class="face"src="imagenes/faceb.png"></a>
+				<a class="l2" href="https://twitter.com/programacionwe4" target="iframe_uno"><img class="face"src="imagenes/twib.png"></a>
+				<a class="l3" href="https://www.instagram.com/prograwebb/" target="iframe_uno"><img class="instagram"src="imagenes/instab.jpg"></a>
+				
+			</section>
+ 
+			<div class="social">
+				<a href="acercade.html" target="iframe_uno"><img class="face"src="imagenes/ic.png"></a>
+				<a href="mapa.html" target="iframe_uno"><img class="face"src="imagenes/ubi.jpg"></a>
+			</div>
+		</footer>
+	</div>
+	<section class="chat-container">
+<div class="chat-button">
+Chat de Facebook
+</div>
+
+<div class="chat-content">
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FProgramacion-Web-689059761496871%2F%3Fmodal%3Dadmin_todo_tour&tabs=messages&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+</div>
+</section> 
+</body>
+</html>
+<script>
+$(".chat-button").on('click', function(e){
+        e.preventDefault();
+        $(".chat-content").slideToggle('fast');
+  });
+</script>

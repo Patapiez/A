@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>funciones</title>
+
+	</head>
+	<style>
+    body{
+        background-color: black;
+    }
+</style>
+	
+	<body>
+		<form action="">
+			<input type="text" id="numero1">
+			<input type="text" id="numero2">
+			<input type="button" value="sumar" onclick="alert(suma());">
+		</form>
+		
+		<script languaje="javascript">
+			var suma=function(num1, num2){
+				var num1=parseFloat(document.getElementById("numero1").value);
+				var num2=parseFloat(document.getElementById("numero2").value);
+			
+				var resultado=num1+num2;
+			return resultado;
+			}
+			
+		</script>
+	</body>
+	
+
+</html> 

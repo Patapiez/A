@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Programacion Web</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<LINK href="css/estilomenu.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>Introduccion</h1>
+	<br><br><br>
+	<h2>HTML</h2>
+     <p>
+		HTML es el lenguaje con el que se escribe el contenido de las páginas web. Las páginas web pueden ser vistas por el usuario mediante un tipo de aplicación llamada cliente web o más comúnmente "navegador". Podemos decir por lo tanto que el HTML es el lenguaje usado por para especificar el contenido que los navegadores deben representar a la hora de mostrar una página web.
+   <br><br>
+        Este lenguaje nos permite aglutinar textos, imágenes, enlaces... y combinarlos a nuestro gusto. La ventaja del HTML a la hora de representar el contenido en un navegador, con respecto a otros formatos físicos como libros o revistas, es justamente la posibilidad de colocar referencias a otras páginas, por medio de los enlaces hipertexto.
+    <br><br><br>
+        <h3>Un poco de historia</h3>
+    <br><br>
+El lenguaje HTML se creó en 1991. Tiene una historia realmente corta pero para su poca vida ha sufrido importantes cambios. Su padre es Tim Berners-Lee que lo diseñó con objetivos divulgativos. Inicialmente no se pensó que la web llegaría a ser un área de ocio con carácter multimedia, de modo que, nació sin dar respuesta a todos los posibles usos que se le iba a dar y a todos los colectivos de gente que lo utilizarían en un futuro. Sin embargo, pese a esta deficiente planificación, si que se han ido incorporando modificaciones con el tiempo, agregando nuevas características para cubrir las nuevas necesidades.
+<br><br>
+Como hemos dicho, los programas que leen y presentan las páginas web a los usuarios se llaman navegadores. Éstos son los responsables de interpretar el HTML y "pintar" una página tal como ellos entiendan que deben hacer. Sin embargo, esas reglas de representación no son subjetivas de cada fabricante del navegador, sino que existe una organización llamada W3C que se encarga de definir el estándar que todos deben seguir a la hora de escribir e interpretar el HTML. Estos estándares del HTML se conocen como "Especificaciones", las cuales han ido apareciendo en el tiempo. El HTML5 es el último estándar en la actualidad.
+<br><br>
+Históricamente los navegadores, además de la propia comunidad de usuarios, han sido los mayores impulsores de los cambios ocurridos en el lenguaje. Una vez detectada la necesidad es el W3C el que crea el estándar y marca una dirección que todos deben seguir.
+<br><br>
+<h3>Los navegadores y sus problemas</h3>
+<br><br>
+El conflicto generado por los navegadores es debido a su diversidad. Existen multitud de navegadores o clientes web presentes en el mercado los cuales muchas veces no son capaces de interpretar un mismo código de una manera unificada. Esto obliga al desarrollador a, una vez creada su página, comprobar que esta puede ser leída satisfactoriamente por todos los navegadores, o al menos, los más utilizados. Cuando surgen problemas de interpretación, queda de parte del desarrollador resolver el problema tirando de técnicas o conocimientos que él disponga.
+<br><br>
+Afortunadamente, en la actualidad las diferencias de interpretación de los navegadores con respecto a un mismo código HTML son mínimos, pero en el pasado los desarrolladores tenían que emplear mucho tiempo en remar contracorriente para solucionarlos. Sin embargo, quedan todavía muchos usuarios que navegan con sistemas anticuados, ya sea por falta de interés para actualizarse, conocimientos, o por disponer ordenadores muy antiguos.
+<br><br>
+Pero no todo ha sido malo por parte de los navegadores. Ellos también son los responsables de introducir nuevas etiquetas en el uso común del día a día, que se han ido incorporando al estándar HTML en sucesivas versiones. Aunque antes de estandarizarse esas etiquetas era común que cada navegador crease su etiqueta propietaria para resolver la misma necesidad, lo que obligaba a los desarrolladores a repetir código o incluso a hacer versiones de páginas diferentes para navegadores. Con todo esto no queremos asustar a nadie y volvemos a repetir que las diferencias en la actualidad son mínimas, pero sí deseamos que quede clara la necesidad de la estandarización creada por el W3C, responsable de marcar una pauta que actualmente cumplen todos los navegadores modernos de manera bastante fiel.
+<br><br><br>
+<h3>Los lenguajes de la web</h3>
+HTML no está solo como único lenguaje para crear la web, aunque en un principio sí que era así. Su evolución tan anárquica ha supuesto toda una seria de inconvenientes y deficiencias que han debido ser superados con la introducción de otras tecnologías accesorias capaces de organizar, optimizar y automatizar el funcionamiento de las webs. Ejemplos que pueden sonaros son las CSS, o JavaScript. Veremos más adelante en qué consisten algunas de ellas.
+<br><br>
+Lo que es importante para el desarrollador es conocer el enfoque de cada lenguaje, para saber cuál es la manera correcta de utilizarlo y cómo se complementan los unos a los otros. No es necesario que se sea experto en todos ellos, pero sí saber qué cosas se deberían hacer con cada cual, para no cometer errores que deriven en una mala interpretación por parte de los navegadores. Así mismo tenemos que pensar que no todas las personas van a acceder a una web a través de un ordenador, sino también de un teléfono o de navegadores especializados para personas con discapacidades, por ejemplo para ciegos. Es por ello que es importante escribir correctamente los lenguajes, respetando los estándares y así cada navegador podrá hacer su mejor papel para representar la pagina lo más correctamente posible.
+<br><br>
+En este manual queremos incidir mucho en este detalle, la correcta utilización del HTML: escribir el contenido, para que nuestro trabajo sea lo más adecuado y de elevada calidad.
+<br><br><br>
+<h3>Los editores de HTML</h3>
+Además del navegador necesario para ver los resultados de nuestro trabajo, necesitamos evidentemente otra herramienta capaz de crear la página en si. Un archivo HTML (una página) no es más que un texto plano al que le colocamos extensión ".html". Es por ello que para programar en HTML necesitamos un editor de texto.
+<br><br>
+Es recomendable usar un editor de textos sencillo, de texto plano. Queremos remarcar que nunca se debe usar el tipo de editor de textos que se usan para escribir documentos, cartas, trabajos para el colegio, como Wordpad o Microsoft Word, pues colocan su propio código especial al guardar los documentos y HTML es únicamente texto plano, con lo que podremos tener problemas. Otro tipo de editor que tampoco recomendamos es DreamWeaver, un editor que te escribe el HTML a base de tocar botones, negritas, listas, crear tabla, etc. Para aprender es extremadamente recomendable que se use un programa que te permita escribir el código en crudo, así no tendrás problemas en el futuro.
+<br><br>
+El tipo de editores que recomendamos son aquellos específicos para la edición de código, los cuales están pensados para facilitar los procesos de la programación y de la escritura de código plano como el del lenguaje HTML. Existen infinidad de editores de código interesantes, que nos aportan más o menos facilidades y que nos permiten aumentar nuestra productividad. No obstante, es aconsejable en un principio utilizar una herramienta lo más sencilla posible para poder prestar la máxima atención a nuestro código y familiarizarnos lo antes posible con él. Siempre tendremos tiempo más delante de pasarnos a editores más versátiles con la consiguiente ganancia de tiempo.
+<br><br>
+Igual alguna persona que comience puede pensar que tienen muchas opciones, pero realmente podemos comenzar con lo básico, crear nuevos archivos, editar el código, guardarlos en nuestro disco duro... y punto. Recomendamos estos editores porque están disponibles para todas las plataformas, Windows, Mac y Linux y porque son gratuitos para cualquier uso.
+<br><br>
+A continuación tienes algunas referencias para ampliar la información, aunque con estas recomendaciones tienes para empezar. Para una referencia más claro todo el tema de editores y los tipos que existen, visita los artículos:
+<br><br><br>
+<h3>Editores de HTML.</h3>
+<br><br>
+Si buscas en DesarrolloWeb, en el buscador por "editores", encontrarás muchas otras alternativas.
+HTML es para escribir el contenido
+Volveremos sobre este punto, pues es de vital importancia para entender y usar bien HTML. Graba e tu memoria que HTML es para especificar el contenido de las páginas web y no el aspecto que van a tener.
+<br><br>
+Cuando nos referimos al contenido queremos indicar párrafos, imágenes, listas, tablas y todo aquello que forma parte de "el qué". Nunca debemos usar HTML para definir cómo se debe de ver un contenido, si el texto debe tener color rojo, con una fuente mayor, o si se debe alinear a la derecha. Para especificar el aspecto que debe tener una web se usa un lenguaje complementario, llamado CSS.
+<br><br>
+Por tanto, HTML sirve para decir qué contenido debe tener una página y CSS sirve para decir cómo se debe representar tal contenido, con qué estilo. Es fácil saltarse esta regla, porque en HTML existen diversas etiquetas (y atributos, de los que no hemos hablado todavía) que realmente están pensados para definir la presentación. Es una herencia de versiones pasadas del HTML y aunque en este manual se nos pueda saltar alguna vez alguna excepción, no debemos caer en la trampa de usar el HTML para definir cómo debe de representarse un elemento en la página.
+<br><br><br>
+<h2>XML</h2>
+<br><br>
+<h3>¿Que es?</h3>
+XML es una tecnología en realidad muy sencilla que tiene a su alrededor otras tecnologías que la complementan y la hacen mucho más grande y con unas posibilidades enormes y básicas para la sociedad de la información. Vamos a ver a lo largo de varios capítulos una introducción al mundo XML, es decir, al lenguaje así como a las tecnologías que trabajan con él, sus usos, ventajas y modos de llevar a cabo las tareas.
+<br><br>
+XML, con todas las tecnologías relacionadas, representa una manera distinta de hacer las cosas, más avanzada, cuya principal novedad consiste en permitir compartir los datos con los que se trabaja a todos los niveles, por todas las aplicaciones y soportes. Así pues, el XML juega un papel importantísimo en este mundo actual, que tiende a la globalización y la compatibilidad entre los sistemas, ya que es la tecnología que permitirá compartir la información de una manera segura, fiable, fácil. Además, XML permite al programador y los soportes dedicar sus esfuerzos a las tareas importantes cuando trabaja con los datos, ya que algunas tareas tediosas como la validación de estos o el recorrido de las estructuras corre a cargo del lenguaje y está especificado por el estándar, de modo que el programador no tiene que preocuparse por ello.
+<br><br>
+Vemos que XML no está sólo, sino que hay un mundo de tecnologías alrededor de él, de posibilidades, maneras más fáciles e interesantes de trabajar con los datos y, en definitiva, un avance a la hora de tratar la información, que es en realidad el objetivo de la informática en general. XML, o mejor dicho, el mundo XML no es un lenguaje, sino varios lenguajes, no es una sintaxis, sino varias y no es una manera totalmente nueva de trabajar, sino una manera más refinada que permitirá que todas las anteriores se puedan comunicar entre si sin problemas, ya que los datos cobran sentido. Todo esto lo veremos con calma en la Introducción a XML.
+<br><br>
+XML es interesante en el mundo de Internet y el e-bussiness, ya que existen muchos sistemas distintos que tienen que comunicarse entre si, pero como se ha podido imaginar, interesa por igual a todas las ramas de la informática y el tratamiento de datos, ya que permite muchos avances a la hora de trabajar con ellos.
+<br><br>
+Así pues, os recomendamos seguir esta lectura en la introducción a XML. A lo largo de los siguientes capítulos, vamos a ver algunas características importantes de la tecnología que nos permitirán comprender mejor el mundo XML y cómo soluciona nuestros problemas a la hora de trabajar con los datos.
+<br><br><br>
+<h3>Historia del XML</h3>
+<br><br>
+El XML proviene de un lenguaje que inventó IBM allá por los años 70. El lenguaje de IBM se llama GML (General Markup Language) y surgió por la necesidad que tenían en la empresa de almacenar grandes cantidades de información de temas diversos.
+<br><br>
+Imaginar por un momento la cantidad de documentación que generaría IBM sobre todas las áreas en las que trabajaba e investigaba, y la cantidad de información que habrá generado hasta hoy. Así pues, necesitaban una manera de guardar la información y los expertos de IBM se inventaron GML, un lenguaje con el que poder clasificarlo todo y escribir cualquier documento para que se pueda luego procesar adecuadamente.
+<br><br>
+Este lenguaje gustó mucho a la gente de ISO, una entidad que se encarga de normalizar cuantas cosas podáis imaginar para los procesos del mundo actual, de modo que allá por el 86 trabajaron para normalizar el lenguaje, creando el SGML, que no era más que el GML pero estándar (Standar en inglés).
+<br><br>
+SGML es un lenguaje muy trabajado, capaz de adaptarse a un gran abanico de problemas y a partir de él se han creado los siguientes sistemas para almacenar información.
+<br><br>
+Por el año 89, para el ámbito de la red Internet, un usuario que había conocido el lenguaje de etiquetas (Markup) y los hiperenlaces creo un nuevo lenguaje llamado HTML, que fue utilizado para un nuevo servicio de Internet, la Web. Este lenguaje fue adoptado rápidamente por la comunidad y varias organizaciones comerciales crearon sus propios visores de HTML y riñeron entre ellos para hacer el visor más avanzado, inventándose etiquetas como su propia voluntad les decía. Desde el 96 hasta hoy una entidad llamada W3C ha tratado de poner orden en el HTML y establecer sus reglas y etiquetas para que sea un estándar. Sin embargo el HTML creció de una manera descontrolada y no cumplió todos los problemas que planteaba la sociedad global de Internet.
+<br><br>
+El mismo W3C en el 98 empezó y continúa, en el desarrollo de XML (Extended Markup Language). En este lenguaje se ha pensado mucho más y muchas personas con grandes conocimientos en la materia están trabajando todavía en su gestación. Pretendían solucionar los carencias del HTML en lo que se respecta al tratamiento de la información. Problemas del HTML como:
+<br><br>
+El contenido se mezcla con los estilos que se le quieren aplicar.
+No permite compartir información con todos los dispositivos, como pueden ser ordenadores o teléfonos móviles.
+La presentación en pantalla depende del visor que se utilice.
+Imagínese, una persona que conoce el HTML y lo difícil que puede llegar a ser entender su código, que tuviese que procesarlo para extraer datos que necesite en otras aplicaciones. Sería muy difícil saber dónde está realmente la información que busca, siempre mezclada entre etiquetas <FONT>, <TABLE>, <TD>, etc... Esto es una mala gestión de la información y el XML la soluciona.
+<br><br><br>
+<h3>CSS</h3>
+<br><br>
+Desde que CSS comenzó han pasado muchos años y ya vamos por la especificación de CSS3, que incorpora una serie de novedades que vamos a tratar de resumir en este artículo.
+<br><br>
+Qué es CSS
+Si no sabes lo que es CSS probablemente te interesaría comenzar leyendo nuestro manual de CSS o la sección de CSS a fondo. No obstante, cabría decir que CSS es un lenguaje para definir el estilo o la apariencia de las páginas web, escritas con HTML o de los documentos XML. CSS se creó para separar el contenido de la forma, a la vez que permite a los diseñadores mantener un control mucho más preciso sobre la apariencia de las páginas.
+<br><br>
+Con CSS 3, más control sobre la forma
+El objetivo inicial de CSS, separar el contenido de la forma, se cumplió ya con las primeras especificaciones del lenguaje. Sin embargo, el objetivo de ofrecer un control total a los diseñadores sobre los elementos de la página ha sido más difícil de cubrir. Las especificaciones anteriores del lenguaje tenían muchas utilidades para aplicar estilos a las webs, pero los desarrolladores aun continúan usando trucos diversos para conseguir efectos tan comunes o tan deseados como los bordes redondeados o el sombreado de elementos en la página.
+<br><br>
+CSS 1 ya significó un avance considerable a la hora de diseñar páginas web, aportando mucho mayor control de los elementos de la página. Pero como todavía quedaron muchas otras cosas que los diseñadores deseaban hacer, pero que CSS no permitía especificar, éstos debían hacer uso de trucos para el diseño. Lo peor de esos trucos es que muchas veces implica alterar el contenido de la página para incorporar nuevas etiquetas HTML que permitan aplicar estilos de una manera más elaborada. Dada la necesidad de cambiar el contenido, para alterar al diseño y hacer cosas que CSS no permitía, se estaba dando al traste con alguno de los objetivos para los que CSS fue creado, que era el separar por completo el contenido de la forma.
+<br><br>
+CSS 2 incorporó algunas novedades interesantes, que hoy ya utilizamos habitualmente, pero CSS 3 todavía avanza un poco más en la dirección, de aportar más control sobre los elementos de la página.
+<br><br>
+Así pues, la novedad más importante que aporta CSS 3, de cara a los desarrolladores de webs, consiste en la incorporación de nuevos mecanismos para mantener un mayor control sobre el estilo con el que se muestran los elementos de las páginas, sin tener que recurrir a trucos o hacks, que a menudo complicaban el código de las web.
+<br><br>
+<h3>Propiedades nuevas en CSS 3</h3>
+He aquí una lista de las principales propiedades que son novedad en CSS3:
+<br><br>
+<h3>Bordes</h3>
+<ul>
+	<li type="circle">border-color</li>
+	<li type="circle">border-image</li>
+	<li type="circle">border-radius</li>
+	<li type="circle">border-shadow</li>
+</ul>
+<h3>Fondos</h3>
+<ul>
+	<li type="circle">background-origin</li>
+	<li type="circle">background-clip</li>
+	<li type="circle">background-size</li>
+	<li type="circle">hacer capas con múltiples imágenes de fondo</li>
+</ul>
+<h3>Color</h3>
+<ul>
+    <li type="circle">colores HSL</li>
+	<li type="circle">colores HSLA</li>
+	<li type="circle">colores RGBA</li>
+	<li type="circle">Opacidad</li>
+</ul>
+<h3>Texto</h3>
+<ul>
+    <li type="circle">text-shadow</li>
+	<li type="circle">text-overflow</li>
+	<li type="circle">Rotura de palabras largas</li>
+	<li type="circle">Web Fonts</li>
+</ul>
+<h3>Interfaz</h3>
+<ul>
+    <li type="circle">box-sizing</li>
+	<li type="circle">resize</li>
+	<li type="circle">outline</li>
+	<li type="circle">nav-top, nav-right, nav-bottom, nav-left</li>
+</ul>
+<h3>Degradados CSS3</h3>
+<ul>
+    <li type="circle">Degradados lineales</li>
+	<li type="circle">Degradados radiales</li>
+	<li type="circle">Degradados lineales de repetición</li>
+	<li type="circle">Degradados radiales de repetición</li>
+</ul>
+</p>
+</body>
+</html>

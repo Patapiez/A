@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    </head>
+<style>
+    body{
+        background-color: black;
+    }
+</style>
+       
+    <script>
+       
+
+
+            function calc()
+            {
+                var numero1= parseFloat(document.getElementById('numero1').value);
+                var numero2=parseFloat(document.getElementById('numero2').value);
+                var oper=document.getElementById('operators').value;
+
+                
+            
+       
+                
+
+                if(oper ==='+')
+                {
+                    document.getElementById('numero3').value=numero1+numero2;
+                }
+                if(oper ==='-')
+                {
+                    document.getElementById('numero3').value=numero1-numero2;
+                }
+                if(oper ==='X')
+                {
+                    document.getElementById('numero3').value=numero1*numero2;
+                }
+                if(oper ==='/')
+                {
+                    document.getElementById('numero3').value=numero1/numero2;
+                }
+                if(oper ==='raiz')
+                {
+                    document.getElementById('numero3').value= Math.sqrt(numero1);
+                }
+
+                if(oper ==='potencia')
+                {
+                    document.getElementById('numero3').value= Math.pow(numero1,numero2);
+                }
+                
+                if(oper ==='coseno')
+                {
+                    document.getElementById('numero3').value= Math.cos(numero1);
+                }
+                     
+                if(oper ==='logN')
+                {
+                    document.getElementById('numero3').value= Math.log(numero1);
+                }
+                if(oper ==='seno')
+                {
+                    document.getElementById('numero3').value= Math.sin(numero1);
+                }
+                if(oper ==='tangente')
+                {
+                    document.getElementById('numero3').value= Math.tan(numero1);
+                }
+            }
+
+     
+        </script>
+    <body>
+    
+   
+    <input type="text" id="numero1" >
+    <input type="text" id="numero2">
+    <br>
+   <select id="operators">
+       <option value="+">+</option>
+       <option value="-">-</option>
+       <option value="/">/</option>
+       <option value="X">X</option>
+       <option value="raiz">raiz</option>
+       <option value="potencia">potencia</option>
+       <option value="coseno">coseno</option>
+       <option value="logN">logaritmo natural</option>
+       <option value="seno">seno</option>
+       <option value="tangente">tangente</option>
+
+   </select>
+    
+  
+ 
+     <button onclick="calc() ;">calcular</button>
+    <input type="text" id="numero3">
+   
+    
+    </body>
+</html>

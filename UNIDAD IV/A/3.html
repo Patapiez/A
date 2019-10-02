@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Imagenes</title>
+		<style>
+			.thumb{
+				width:720px;
+				transition:300ms all ease
+			}
+			
+			.grande{
+				width:1080px;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<div align="Center"><img id="thumb" class="thumb" src="3.jpg" width="400px" alt="imagen-A01"></div>
+						
+		<script>
+			var zoom = function(){
+				var thumb = document.getElementById("thumb");
+				
+				if (thumb.className == "thumb" ){
+					thumb.className = "thumb grande";
+				}
+				else{
+					thumb.className = "thumb";
+				}
+				}
+		</script>
+	<div align="center">
+		<form action="">
+		<input type="button" value="Cambia el tamaño" onclick="zoom();" >
+		</form>
+	</div>
+	</body>
+</html> 

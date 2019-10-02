@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider</title>
+</head>
+<body>
+	
+	<img name="slider" width="100%" height="550">
+
+	<script>
+	
+	window.addEventListener('load', function(){
+		console.log('contenido cargado');
+
+		var imagenes =[];
+		imagenes[0]='car/1.jpg'
+		imagenes[1]='car/2.jpg'
+		imagenes[2]='car/3.png'
+		imagenes[3]='car/4.png'
+		imagenes[4]='car/5.png'
+		imagenes[5]='car/6.jpeg'
+		imagenes[6]='car/7.jpg'
+		imagenes[7]='car/8.jpg'
+		imagenes[8]='car/9.jpg'
+		imagenes[9]='car/10.png'
+
+		var IndiceImagenes = 0;
+
+        function cambiarImagenes(){
+
+			document.slider.src=imagenes[IndiceImagenes];
+
+			if(IndiceImagenes < 9){
+			IndiceImagenes++;
+		    }else{
+
+			IndiceImagenes= 0;
+
+		}
+	}
+           setInterval(cambiarImagenes, 2000);
+
+	});
+	
+	</script>
+
+</body>
+</html>

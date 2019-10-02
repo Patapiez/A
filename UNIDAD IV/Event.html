@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos</title>
+	
+</head>
+
+<body>
+	<button id="btn">Oprime</button>
+	<input type="text" id="input">
+	<script>
+		(function(){ 
+			var saludo = function(){
+				alert('Hola TravesuraNUÑEZ, que tengas un estupendo dia. Recuerda sonreir...!');
+			};
+		
+			var boton = document.getElementById('btn');
+			boton.addEventListener("click", saludo);
+		}())
+		<!-- aqui arriba podria llevar ";" -->
+	</script>
+	
+</body>
+</html>
