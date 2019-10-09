@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Programacion Web</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<LINK href="css/estilomenu.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+	  body{
+	  	    background-image: url("ima/f6.jpg");
+	  }
+	  div{
+           color:#ffffff;
+	     }
+	  #ejemplo{
+	  	        color: orange;
+	  }
+	  div{
+	  	color:#191970;
+	  }
+	  ul{
+	  	color:#800000;
+	  }
+	  strong{
+	  	color:red;
+	  }
+	  #blue{
+	  	color:green;
+</style>
+<body>
+<div>
+<h1>Selectores</h1>
+<br><br><br>
+Los selectores permiten seleccionar y manipular elementos HTML.
+<br><br>
+Estos son usados para encontrar o seleccionar elementos HTML basados en su id, clase, tipo, atributo y mas.
+<br><br>
+Los selectores identifican a un elemento dentro de la página Web para luego poder definir sus propiedades. Los distintos tipos de selectores abarcan desde el simple nombre de las etiquetas usadas en HTML (BODY, P, CODE, TABLE, UL, etc.) hasta complejas combinaciones que permiten un juego muy amplio de selecciones dentro de la página.
+<br><br>
+El conocimiento en profundidad de los distintos selectores es uno de los aspectos más complejos del lenguaje de las Hojas de Estilo y también el que nos permite sacar el máximo provecho de las CSS.
+<br><br>
+Existen muchos editores de páginas Web que facilitan la labor de crear y aplicar Hojas de Estilo, pero los selectores que se pueden definir con estos programas son sólo los más elementales.La complejidad que pueden alcanzar los selectores contextuales escapan a las posibilidades de cualquier herramienta y es ahí donde los diseñadores deberán apelar a sus propios recursos.
+<br><br>
+La estructura general de los selectores y atributos es de la siguiente manera:
+<br><br>
+<img src="ima/8.gif">
+<br><br><br>
+<h1>El selector de elemento</h1>
+El selector de elementos selecciona elementos basándose en su nombre.
+<br><br>
+Por ejemplo, se pueden seleccionar todos los elementos <strong>&lt;p&gt;</strong> de la siguiente manera: (todos los elementos <strong>&lt;p&gt;</strong> estarán centrados, y serán de color rojo)
+<br><br>
+<strong id="blue">p {<br>text-align: center;<br>color: red;<br>}</strong>
+<br><br><br>
+<h1>El selector de id</h1>
+<br>
+El selector de id utiliza el atributo id de un elemento HTML para seleccionar un elemento en especifico.
+<br><br>
+Un id siempre debe de ser único, por lo cual el selector de id es utilizado cuando se desea seleccionar un elemento único.
+<br><br>
+Para seleccionar un elemento con un id especifico, se utiliza el caracter hash (#), seguido del id del elemento.
+<br><br>
+El estilo a continuación sera aplicado al elemento HTML con id=”para1″:
+<br><br>
+<strong id="blue">#para1 {<br>text-align: center;<br>color: red;<br>}</strong>
+<br><br>
+Es importante mencionar que los nombres de id no deben de empezar con numero.
+<br><br><br>
+<h1>El selector de clase</h1>
+<br>
+El selector de clase selecciona elementos con un atributo clase especifico.
+<br><br>
+Para seleccionar elementos con una clase especifica, se escriba un caracter punto seguido del nombre de la clase:
+<br><br>
+En el ejemplo que se muestra a continuación, todos los elementos HTML con la class=”center” serán alineados:
+<br><br>
+<strong id="blue">center {<br>text-align: center;<br>color: red;<br>}</strong>
+<br><br>
+También es posible especificar que elementos HTML deben de ser afectados por una clase.
+<br><br><br>
+En el ejemplo a continuación, todos los elementos <p> con la class=”center” estarán alienados al centro:
+<br><br>
+<strong id="blue">p.center {<br>text-align: center;<br>color: red;<br>}</strong>
+<br><br>
+Es importante mencionar que los nombres de clase no deben de empezar con numero.
+<br><br>
+<h1>Agrupando selectores</h1>
+<br><br>
+Si se tienen elementos con las mismas definiciones de estilos asi:
+<br><br>
+<strong id="blue">h1 {<br>text-align: center;<br>color: red;<br>}<br><br>h2 {<br>text-align: center;<br>color: red;<br>}<br><br>p {<br>text-align: center;<br>color: red;<br>}</strong>
+<br><br>
+se pueden agrupar los selectores para minimizar el código.
+<br><br>
+Para agrupar selectores, solo separe cada selector con una coma.
+<br><br>
+En el ejemplo a continuación tenemos los selectores del código anterior ya agrupados:
+<br><br>
+<strong>h1, h2, p {<br>text-align: center;<br>color: red;<br>}</strong>
+</div>
+</body>
+</html>

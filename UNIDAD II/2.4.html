@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Programacion Web</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<LINK href="css/estilomenu.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+	  body{
+	  	    background-image: url("ima/fondo4.jpg");
+	  }
+	  div{
+           color:#ffffff;
+	     }
+	  #ejemplo{
+	  	        color: orange;
+	  }
+	  ul{
+	  	color:red;
+	  }
+</style>
+<body>
+	<div>
+	<h1>Formularios</h1>
+	<br><br>
+	Los formularios interactivos permiten a los autores de páginas Web poner elementos interactivos en sus páginas, por ejemplo, para recibir mensajes de sus lectores, de forma similar a las cartas de respuestas que se encuentra en algunas revistas.
+	<br><br>
+	El lector escribe la información rellenando campos o haciendo clic sobre botones, y luego presiona un botón de envío para enviarla a una dirección URL que se suele dirigir a una dirección de correo electrónico o a un script dinámico Web como PHP, ASP o CGI.
+	<br><br><br>
+	<h1>La etiqueta FORM</h1>
+	<br><br>
+	Los formularios están delimitados con la etiqueta <FORM> … </FORM>, que permite reunir varios elementos de formulario, como botones y casillas de texto y que debe poseer los siguientes atributos:
+	<br><br>
+	METHOD indica cómo se enviarán las respuestas
+    “POST” es el valor que envía los datos al agente de procesamiento almacenándolos en el cuerpo del formulario, en tanto que “GET” envía los datos agregándolos a la dirección URL y separándolos de la dirección con un signo de interrogación (para aprender más sobre los métodos POST y GET, consulte el artículo sobre protocolo HTTP)
+    <br><br>
+    ACTION indica la dirección a la que se enviará la información (un script CGI o dirección de correo electrónico (mailto:dirección_de_correo_e@equipo))
+    <br><br>
+    Un atributo opcional de la etiqueta FORM es ENCTYPE, que especifica cómo se codifican los datos del formulario. De cualquier forma, esto no necesita especificarse, ya que el valor predeterminado (application/x-www-form-urlencoded) es el único valor válido. El atributo opcional ACCEPT se usa para establecer tipos MIME para los datos que el formulario puede enviar.
+    <br><br>
+    Esta es la sintaxis para la etiqueta FORM:
+   <p id="ejemplo">
+   &lt;FORM METHOD="POST" o "GET" ACTION="url" ENCTYPE="x-www-form-urlencoded"&gt; ... &lt;/FORM&gt;
+   </p>
+    <br><br>
+    Aquí hay algunos ejemplos de las etiquetas FORM:
+    <p id="ejemplo">
+    &lt;FORM METHOD=POST ACTION="mailto:webmaster@commentcamarche.net"&gt;
+    <br><br>	
+    &lt;FORM METHOD=GET ACTION="http://www.commentcamarche.net/cgi-bin/script.cgi"&gt;
+   </p>
+   <br><br><br>	
+   <h1>	Dentro de la etiqueta FORM</h1>
+   <br>	<br>	
+   La etiqueta FORM actúa como una especie de contenedor para almacenar elementos que permiten al usuario seleccionar o introducir datos. Todos los datos se enviarán a la dirección URL indicada en el atributo ACTION de la etiqueta FORM, por el método indicado en el atributo METHOD.
+   <br>	<br>	
+   Se puede insertar cualquier elemento HTML en una etiqueta FORM (como texto, botones, tablas y enlaces), pero los elementos interactivos son los más interesantes. Estos elementos interactivos son:
+   <br>	<br>	
+   <ul>	
+   	<li type="circle">La etiqueta INPUT: Todos los botones y casillas de texto</li>
+   	<li type="circle">La etiqueta TEXTAREA: una casilla de texto</li>
+   	<li type="circle">La etiqueta SELECT: una lista de opciones múltiples</li>
+   </ul>
+   <br>	<br> <br>	
+   <h1>	Envío de datos</h1>
+   <br>	<br>	
+   Cuando se envía un formulario (haciendo clic en el botón de envío), los datos del formulario se envían a un script CGI bajo la forma de pares nombre/valor, es decir conjuntos de datos representados por el nombre del elemento formulario, un signo igual (“=”) y luego el valor asociado. Estos pares nombre/valor se separan unos de otros mediante el símbolo de unión (“&”). Por lo tanto, los datos que se envían al script se verán así:
+   <br>	<br>	
+   <p id="ejemplo">pcampo1=valor1&field2;=valor2&field3;=valor3</p>
+   <br>	<br>	
+   Con el método GET (enviar los datos mediante una dirección URL), la URL será una cadena como la siguiente:
+   <br>	<br>	
+   <p id="ejemplo">http://pagina.net/cgi-bin/script.cgi?campo1=valor1&field2;=valor2</p>
+   <br>	<br> <br>	
+   <h1>La etiqueta INPUT</h1>
+   <br>	<br>
+   La etiqueta INPUT es una etiqueta esencial para los formularios, ya que se usa para crear muchos elementos “interactivos”. La sintaxis de esta etiqueta es la siguiente:
+   <br>	<br>	
+   	<p id="ejemplo">&lt;INPUT type="Nombre de campo" value="Valor predeterminado" name="Nombre de elemento"&gt;</p>
+   	<br><br>
+   	El atributo name es esencial, ya que permite al script CGI reconocer qué campo está asociado con un par nombre/valor, lo que significa que el nombre del campo estará seguido de un signo igual (“=”) seguido de un valor que el usuario introdujo, o si el usuario no introdujo ningún valor, por el valor predeterminado de la etiqueta value.
+   	<br>	
+    El atributo type se usa para especificar qué tipo de elemento se representa con la etiqueta INPUT. Estos son los valores posibles:
+    <br><br>
+    <ul>	
+    	<li type="circle">checkbox: Las casillas de elección pueden adoptar uno de dos estados: checked (seleccionado) o unchecked (no seleccionado). Cuando la casilla es seleccionada, el par nombre/valor se envía al CGI.
+    	</li><br>
+    	<li type="circle">hidden: Este campo, que el navegador no muestra, es para definir una configuración única que se enviará al CGI como par nombre/valor.
+    	</li><br>
+    	<li type="circle">file: Un campo que permite al usuario especificar una ruta de archivo que lleva al archivo que se enviará con el formulario. Los tipos de archivo que pueden ser enviados deben especificarse utilizando el atributo ACCEPT de la etiqueta FORM.
+    	</li><br>
+    	<li type="circle">image: Un botón de envío personalizado que aparece cuando se ubica una imagen en la ubicación definida por el atributo SRC.
+    	</li><br>
+    	<li type="circle">password: Una casilla de texto donde los caracteres escritos aparecen como asteriscos para camuflar el texto de entrada.
+    	</li><br>
+    	<li type="circle">radio: Un botón que permite al usuario elegir entre varias opciones. Cada uno de estos botones debe tener el mismo atributo name. El par nombre/valor del botón radio seleccionado se enviará al CGI. Al aplicar el atributo checked para uno de estos botones se definirá como seleccionado de forma predeterminada.
+    	</li><br>
+    	<li type="circle">reset: Un botón de restauración para quitar todos los elementos en el formulario y restablecer sus valores predeterminados.
+    	</li><br>
+    	<li type="circle">submit: Un botón de envío para enviar el formulario. El texto en el botón puede definirse usando el atributo value.
+    	</li><br>
+    	<li type="circle">text: Una casilla de texto para escribir una línea de texto. El tamaño de la casilla puede definirse usando el atributo size y la extensión máxima del texto con el atributo maxlength.
+    	</li><br><br>
+    </ul>
+    <h1>La etiqueta TEXTAREA</h1>
+    <br><br>	
+    La etiqueta TEXTAREA se usa para definir un cuadro de texto más grande que la línea simple propuesta por la etiqueta INPUT. Esta etiqueta tiene los siguientes atributos:
+    <br><br>
+    <ul>
+    	<li type="circle">cols: representa el número de caracteres que puede contener un línea
+    	</li><br>	
+    	<li type="circle">rows: representa el número de línea
+    	</li><br>	
+    	<li type="circle">name: representa el nombre asociado con el cuadro de texto, que permite su identificación en el par nombre/valor.
+    	</li><br>	
+    	<li type="circle">readonly: impide que el usuario modifique el texto predeterminado en el campo
+    	</li><br>	
+    	<li type="circle">value: representa el valor predeterminado que se enviará al script si el usuario no ha escrito nada en el cuadro de texto
+    	</li><br><br>
+    </ul>
+    <h1>La etiqueta SELECT</h1>
+    <br><br>
+    La etiqueta SELECT sirve para crear una lista desplegable de elementos (especificados por las etiquetas OPTION dentro de ella). Los atributos de esta etiqueta son:
+    <ul>
+    	<li type="circle">name:representa el nombre asociado con la casilla de texto, que permite su identificación en el par nombre/valor.
+    	</li><br>
+    	<li type="circle">disabled: crea un lista desactivada, que aparece atenuada
+    	</li>
+    	<li type="circle">size: representa el número de líneas de la lista (este valor puede ser más grande que el número de elementos reales de la lista).
+    	</li><br>
+    	<li type="circle">multiple: Permite al usuario seleccionar varios campos de la lista
+    	</li><br><br>
+    </ul>
+    <h1>Ejemplo de formulario</h1>
+    <br><br>
+    Los formularios pueden ubicarse en una página usando tablas (algo recomendable para una presentación profesional). Este es un ejemplo que resume los puntos precedentes, mostrándole cómo disponer un formulario en una página Web mediante una tabla:
+    <br><br>
+    <p id="ejemplo">&lt;FORM method=post action="cgi-bin/script.pl"&gt;<br>Registro de un usuario<br>&lt;TABLE BORDER=0&gt;<br>&lt;TR><br>&lt;TD>Apellido&lt;/TD&gt;<br>&lt;TD&gt;<br>&lt;INPUT type=text name="apellido"&gt;<br>&lt;/TD&gt;<br>&lt;/TR&gt;<br><br>&lt;TR&gt;<br>&lt;TD&gt;Nombre &lt;/TD&gt;<br>&lt;TD&gt;<br>&lt;INPUT type=text name="nombre"&gt;<br>&lt;/TD&gt;<br>&lt;/TR&gt;<br><br>&lt;TR&gt;<br>&lt;TD>Género&lt;/TD&gt;<br>&lt;TD&gt;<br>Hombre: <br>Mujer:  &lt;INPUT type=radio name="género" value="M"&gt;<br>&lt;br>Mujer:  &lt;INPUT type=radio name="género" value="F"&gt;<br>&lt;/TD&gt;<br>&lt;/TR&gt;<br><br>&lt;TR&gt;<br>&lt;TD>Ocupación &lt;/TD&gt;<br>&lt;TD&gt;<br>&lt;SELECT name="ocupación"&gt;<br>&lt;OPTION VALUE="profesor">Profesor &lt;/OPTION&gt;<br>&lt;OPTION VALUE="estudiante">Estudiante &lt;/OPTION&gt;<br>&lt;OPTION VALUE="ingeniero">Ingeniero &lt;/OPTION&gt;<br>&lt;OPTION VALUE="jubilado">Jubilado &lt;/OPTION&gt;<br>&lt;OPTION VALUE="otro">Otro &lt;/OPTION&gt;<br>&lt;/SELECT&gt;<br>&lt;/TD&gt;<br>&lt;/TR&gt;<br>&lt;TR&gt;<br>&lt;TD>Comentarios&lt;/TD&gt;<br>&lt;TD&gt;<br>&lt;TEXTAREA rows="3" name="comentarios"&gt;<br>Escriba aquí sus comentarios &lt;/TEXTAREA&gt;<br>Enviar<br>&lt;/TD&gt;<br>&lt;/TR&gt;<br><br>&lt;TR&gt;<br>&lt;TD COLSPAN=2&gt;<br>&lt;INPUT type="submit" value="Enviar"&gt;<br>&lt;/TD&gt;<br>&lt;/TR&gt;<br>&lt;/TABLE&gt;<br>&lt;/FORM&gt;<br>
+    </p>
+    <br><br>
+    <h2>Esto es lo que aparece en la pantalla:</h2>
+    <br><br>
+    Registro de usuario
+    <br><br>
+    Apellido
+    <br><br>
+    Nombre
+    <br><br>
+    Género: &nbsp; &nbsp; Hombre: Mujer:<br><br>
+    Ocupación
+    <br><br><br>
+    Comentarios
+    <br><br><br>
+   </div>
+</html>
